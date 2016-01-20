@@ -1,0 +1,5 @@
+Palabra,Audio,Imagen,RFIDTag
+a,a.mp3,a.jpg,tag
+anillo,anillo.mp3,anillo.jpg,tag
+e,e.mp3,e.jpg,tag
+elefante,elefante.mp3,elefante.jpg,tag

@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">Kiteracy</string>
+
+    <!-- strings del screen PantallaPrincipal-->
+    <string name="vinculados">Dispositivos vinculados</string>
+    <string name="btnVinculadosText">Cargar dispositivos vinculados</string>
+
+    <!-- strings del screen configuracionTags-->
+    <string name="title_activity_configuracion_tags">ConfiguracionTags</string>
+    <string name="action_settings">Settings</string>
+</resources>
