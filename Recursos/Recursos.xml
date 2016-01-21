@@ -1,28 +1,28 @@
 <?xml version="1.0" encoding="utf-8"?>
-<Alfabeto  xmlns=""> 
+<Alfabeto> 
 
-  <letra id="a" nombre="a" imagen="a.jpg" audio="a.mp3" RFIDTag="">
+  <letra id="a" valor="a" imagen="a.jpg" audio="a.mp3" RFIDTag="">
     <palabra id="anillo" valor= "anillo" audio="anillo.mp3" imagen="anillo.jpg" RFIDTag="">
 	</palabra>
   </letra>
   
-  <letra id="e" nombre="e" imagen="e.jpg" audio="e.mp3" RFIDTag="">
+  <letra id="e" valor="e" imagen="e.jpg" audio="e.mp3" RFIDTag="">
     <palabra id="elefante" valor= "elefante" audio="elefante.mp3" imagen="elefante.jpg" RFIDTag=""></palabra>
   </letra>
   
-  <letra id="i" nombre="i" imagen="i.jpg" audio="i.mp3" RFIDTag="">
+  <letra id="i" valor="i" imagen="i.jpg" audio="i.mp3" RFIDTag="">
     <palabra id="iglesia" valor= "iglesia" audio="iglesia.mp3" imagen="iglesia.jpg" RFIDTag=""></palabra>
   </letra>
   
-  <letra id="i" nombre="i" imagen="i.jpg" audio="i.mp3" RFIDTag="">
+  <letra id="i" valor="i" imagen="i.jpg" audio="i.mp3" RFIDTag="">
     <palabra id="iglesia" valor= "iglesia" audio="iglesia.mp3" imagen="iglesia.jpg" RFIDTag=""></palabra>
   </letra>
   
-  <letra id="o" nombre="o" imagen="o.jpg" audio="o.mp3" RFIDTag="">
+  <letra id="o" valor="o" imagen="o.jpg" audio="o.mp3" RFIDTag="">
     <palabra id="ojo" valor= "ojo" audio="ojo.mp3" imagen="ojo.jpg" RFIDTag=""></palabra>
   </letra>
   
-   <letra id="u" nombre="u" imagen="u.jpg" audio="u.mp3" RFIDTag="">
+   <letra id="u" valor="u" imagen="u.jpg" audio="u.mp3" RFIDTag="">
     <palabra id="uña" valor= "uña" audio="uña.mp3" imagen="uña.jpg" RFIDTag=""></palabra>
   </letra>
   

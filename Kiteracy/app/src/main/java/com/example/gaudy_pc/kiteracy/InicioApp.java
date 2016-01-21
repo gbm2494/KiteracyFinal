@@ -8,6 +8,7 @@ import android.widget.ArrayAdapter;
 import android.widget.EditText;
 import android.widget.Spinner;
 
+/*Pantalla inicial del app, muestra el numero de sesiÃ³n y el tipo de voz a ejecutar*/
 public class InicioApp extends AppCompatActivity {
 
     /*Vector con los elementos del spinner de la pantalla inicial*/
@@ -17,8 +18,9 @@ public class InicioApp extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_inicio_app);
 
-        /*Distintas voces presentes en la aplicaci{on*/
-        this.elementosVoz = new String[] {"Mujer", "Hombre", "Niña", "Niño"};
+        /*Distintas voces presentes en la aplicacion*/
+        this.elementosVoz = new String[] {"Mujer", "Hombre", "Nina", "Nino"};
+
         /*Se cargan los elementos en el spinner*/
         Spinner s = (Spinner) findViewById(R.id.SpinnerVoz);
         ArrayAdapter<String> adapter = new ArrayAdapter<String>(this,
@@ -26,6 +28,7 @@ public class InicioApp extends AppCompatActivity {
         s.setAdapter(adapter);
     }
 
+    /*MÃ©todo para el cambio de pantalla*/
     public void mostrarNuevaPantalla(View view) {
         Intent intent = new Intent(this, PantallaPrincipal.class);
         startActivity(intent);

@@ -8,4 +8,5 @@
     <!-- strings del screen configuracionTags-->
     <string name="title_activity_configuracion_tags">ConfiguracionTags</string>
     <string name="action_settings">Settings</string>
+    <string name="configuracion">Objetos a configurar</string>
 </resources>

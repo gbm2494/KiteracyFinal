@@ -30,6 +30,10 @@
         </activity>
         <activity android:name=".configuracionTags" >
         </activity>
+        <activity android:name=".ConfiguracionObjeto" >
+        </activity>
+        <activity android:name=".Sesion" >
+        </activity>
     </application>
 
 </manifest>

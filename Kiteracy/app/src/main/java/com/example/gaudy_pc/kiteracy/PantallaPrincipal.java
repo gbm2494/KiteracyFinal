@@ -19,7 +19,7 @@ import android.widget.Toast;
 import java.util.ArrayList;
 import java.util.Set;
 
-
+/*Pantalla de inicio de Kiteracy la cual muestra los dispositivos disponibles para conectarse*/
 public class PantallaPrincipal extends AppCompatActivity
 {
     //widgets
