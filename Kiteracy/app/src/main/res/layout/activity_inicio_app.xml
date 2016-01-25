@@ -53,10 +53,20 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             >
-            <Button android:text="Iniciar" android:layout_span="2" android:onClick="mostrarNuevaPantalla" />
+            <Button android:id="@+id/btnIniciar" android:text="Iniciar" android:layout_span="2" android:onClick="accionBtnIniciar" />
 
         </TableRow>
 
+        <TableRow
+
+                android:layout_width="20dp"
+                android:layout_height="40dp">
+
+            <Button android:id="@+id/btnConfiguracion" android:text="Configurar" android:layout_span="2" android:onClick="accionBtnConfigurar" />
+        </TableRow>
+
     </TableLayout>
+
+
 
 </LinearLayout>

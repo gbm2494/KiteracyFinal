@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Alfabeto>
 
-    <letra id="a" valor="a" imagen="a.jpg" audio="a.mp3" RFIDTag="">
+    <letra id="a" valor="a" imagen="a.jpg" audio="a.mp3" RFIDTag="HOLA">
         <palabra id="anillo" valor= "anillo" audio="anillo.mp3" imagen="anillo.jpg" RFIDTag="">
         </palabra>
     </letra>

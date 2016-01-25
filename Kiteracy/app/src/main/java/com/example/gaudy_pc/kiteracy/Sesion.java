@@ -1,5 +1,6 @@
 package com.example.gaudy_pc.kiteracy;
 
+import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 
@@ -10,5 +11,9 @@ public class Sesion extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_sesion);
+
+        Intent intent = getIntent();
+        String address = intent.getStringExtra(PantallaPrincipal.EXTRA_ADDRESS);
+
     }
 }

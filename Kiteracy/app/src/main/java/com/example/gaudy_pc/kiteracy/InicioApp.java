@@ -13,6 +13,9 @@ public class InicioApp extends AppCompatActivity {
 
     /*Vector con los elementos del spinner de la pantalla inicial*/
     public String[] elementosVoz;
+
+    public static String seleccion = "Iniciar";
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -28,10 +31,20 @@ public class InicioApp extends AppCompatActivity {
         s.setAdapter(adapter);
     }
 
-    /*Método para el cambio de pantalla*/
-    public void mostrarNuevaPantalla(View view) {
+    /*Método para el cambio de pantalla para configurar el bluetooth del botón iniciar*/
+    public void accionBtnIniciar(View view) {
+
         Intent intent = new Intent(this, PantallaPrincipal.class);
+        intent.putExtra(seleccion, "Iniciar");
         startActivity(intent);
+    }
+
+    /*Método para el cambio de pantalla al seleccionar el botón configurar*/
+    public void accionBtnConfigurar (View view){
+        Intent i = new Intent(this, PantallaPrincipal.class);
+        i.putExtra(seleccion, "Configurar");
+        startActivity(i);
+
     }
 
 }

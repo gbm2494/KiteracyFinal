@@ -32,19 +32,19 @@ pantallaPrincipal, además muestra la lista de objetos disponibles para configur
 public class configuracionTags extends AppCompatActivity {
 
     /*botón para declarar el botón "Desconectar" en pantalla*/
-    Button btnDis;
+    Button btnDesconectarBluetooth;
+
     /*String para guardar la dirección MAC del bluetooth al que se desea conectar*/
     String address = null;
+
     /*Barra de progreso para el estado de la conexión del bluetooth*/
     private ProgressDialog progress;
 
     /*Adapter y socket bluetooth para crear la conexión bluetooth con el dispositivo seleccionado*/
     BluetoothAdapter myBluetooth = null;
     BluetoothSocket btSocket = null;
-
     /*Booleano para verificar si ya está conectado*/
     private boolean isBtConnected = false;
-
     //UUID SSP para crear la conexión con un bluetooth slave
     static final UUID myUUID = UUID.fromString("00001101-0000-1000-8000-00805F9B34FB");
 
@@ -54,6 +54,8 @@ public class configuracionTags extends AppCompatActivity {
 
     /*variable que guarda la seleccion del usuario en el listView y lo envia con el intent*/
     public final static String OBJETO_SELECCIONADO = "";
+    /*Aquí se almacena la dirección MAC del dispositivo bluetooth a conectar*/
+    public static String EXTRA_ADDRESS = "device_address";
 
     @Override
     protected void onCreate(Bundle savedInstanceState)
@@ -67,12 +69,12 @@ public class configuracionTags extends AppCompatActivity {
 
         setContentView(R.layout.activity_configuracion_tags);
 
-        btnDis = (Button)findViewById(R.id.btnDesconectarBT);
+        btnDesconectarBluetooth = (Button)findViewById(R.id.btnDesconectarBT);
 
         new ConnectBT().execute(); //Conexión bluetooth
 
         /*Acción del click en el botón desconectar*/
-        btnDis.setOnClickListener(new View.OnClickListener() {
+        btnDesconectarBluetooth.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Disconnect(); //close connection
@@ -178,6 +180,7 @@ public class configuracionTags extends AppCompatActivity {
 
             //Se cambia de activity
             intent.putExtra(OBJETO_SELECCIONADO, info);
+            intent.putExtra(EXTRA_ADDRESS, address);
             startActivity(intent);
         }
     };
@@ -211,7 +214,7 @@ public class configuracionTags extends AppCompatActivity {
             }
             catch (IOException e)
             {
-                ConnectSuccess = false;//if the try failed, you can check the exception here
+                ConnectSuccess = false;
             }
             return null;
         }

@@ -22,8 +22,9 @@ public class ConfiguracionObjeto extends AppCompatActivity {
         label = (TextView)findViewById(R.id.objetoRecibido);
         Intent intent = getIntent();
         label.setText(intent.getStringExtra(configuracionTags.OBJETO_SELECCIONADO));
-
+        String address = intent.getStringExtra(configuracionTags.EXTRA_ADDRESS); //Se recibe la MAC del dispositivo a conectar
 
         /*Esta clase debe conectarse con bluetooth como lo hace la clase configuracionTags*/
+
     }
 }
